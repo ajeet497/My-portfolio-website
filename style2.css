@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Story+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bitcount+Grid+Single:wght@100..900&family=Delicious+Handrawn&family=Delius&family=Emilys+Candy&family=Pacifico&family=Permanent+Marker&family=Roboto:ital,wght@0,100..900;1,100..900&family=Story+Script&display=swap');
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* MAIN BACKGROUND */
+#background {
+  width: 100vw;
+  height: 100vh;
+ background: linear-gradient(120deg, #050505, #120000d5, #320202);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* SECOND BACKGROUND (LAYOUT CONTAINER) */
+#second-background {
+  width: 70vw;
+  height: 70vh;
+ background: linear-gradient(120deg, #0a0a0a, #2b0000, #703131);
+
+  border-radius: 30px;
+  box-shadow: 5px 5px 10px gray;
+
+  display: flex;
+  flex-direction: row;        /* default: side by side */
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* NAVBAR */
+#navbar {
+  width: min(30vw, 90%);
+  height: 5vh;
+
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  background: linear-gradient(
+    135deg,
+    rgba(232, 230, 231, 0.25),
+    rgba(72, 17, 19, 0.25),
+    rgba(179, 44, 177, 0.25)
+  );
+  backdrop-filter: blur(12px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+
+
+#navbar a {
+  color: #ebe9e9;
+  text-decoration: none;
+  font-size: clamp(0.7rem, 1.2vw, 1rem);
+  font-family: "Story Script", sans-serif;
+}
+#navbar a:hover{
+  color: red;
+   
+}
+@media (max-width: 768px) {
+  #second-background {
+    flex-direction: column;   /* stack vertically */
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    height: 90vh;
+  }
+
+  #navbar {
+    width: 95%;
+  }
+  
+}
+span{
+  color:rgb(239, 57, 57);
+}
+p{
+  font-size: 1.3rem;
+}
+#content{
+  color: white;
+}
+h3{
+  font-family: "Emilys Candy", serif;
+  font-size: 1.3rem;
+}
+
+
